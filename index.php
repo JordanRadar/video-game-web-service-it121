@@ -59,12 +59,37 @@ function bondJSON(data){
 	//Here is how I see data returned via the console
 	console.log(data);
 
-	$("#output").text(JSON.stringify());
+	//identifies the type of data returned
+	$('#filmtitle').html(data.title);
+
+	//$("#output").text(JSON.stringify(data));
 
 	//this creates a map of the JSON on our page
+	/*
 	let myData = JSON.stringify(data,null,4);
 	myData = "<pre>" + myData + "</pre>"
 	#("#output").html(myData);
+	*/
+}
+
+function bondTemplate(film){
+
+	return `
+		<div class="film">
+			<b>Film: </b>${film.Film}</br>
+			<b>Title: </b>${film.Title}</br>
+			<b>Year: </b>${film.Year}</br>
+			<b>Director: </b>${film.Director}</br>
+			<b>Producers: </b>${film.Producers}</br>
+			<b>Writers: </b>${film.Writers}</br>
+			<b>Composer: </b>${film.Composer}</br>
+			<b>Bond: </b>${film.Bond}</br>
+			<b>Budget: </b>${film.Budget}</br>
+			<b>Box Office:</b>${film.BoxOffice}</br>
+			<div class="pic"><img src="thumbnails/${film.Image}" /></div>
+		</div>
+	`;
+
 }
 
 </script>
@@ -87,7 +112,7 @@ function bondJSON(data){
 			<b>Budget: </b> $1,000,000.00</br>
 			<b>Box Office:</b> $59,567,035.00</br>
 			<div class="pic"><img src="thumbnails/dr-no.jpg" /></div>
-			
+
 			</div>
 		</div>
 		<div id="output">Results go here</div>
