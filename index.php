@@ -51,7 +51,7 @@ function loadAJAX(cat)
 {
    $.ajax({
        type: "GET",
-       //dataType: "json",
+       dataType: "json",
        url: "api.php?cat=" + cat,
        success: bondJSON,
        error: function(xhr, status, error){
