@@ -1,5 +1,5 @@
 {
-	"title": "Video Games by Year",
+	"title": "Video Games by Title",
 	"games":[
               {
                 "Title":"Counter-Strike: Global Offensive",
