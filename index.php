@@ -106,7 +106,7 @@ function bondTemplate(game){
 			<b>Company: </b>${game.Company}</br>
 			<b>Year: </b>${game.Year}</br>
 			<b>Rating: </b>${game.Rating}</br>
-			<div class="pic"><img src="thumbnails/${game.Image}" /></div>
+			<div class="pic"><img height="75px" src="thumbnails/${game.Image}" /></div>
 		</div>
 	`;
 }
