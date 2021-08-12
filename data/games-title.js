@@ -8,7 +8,7 @@
                 "Year":"2012",
                 "Rating":"M",
                 "Image":"counter-strike-global-offensive.jpg"
-              }
+              },
               {
                 "Title":"Minecraft",
                 "Genre":"Sandbox",
