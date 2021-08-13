@@ -135,7 +135,7 @@ function bondTemplate(game){
 		</div>
 			-->
 		</div>
-		<div id="output">Results go here</div>
+		<div id="output"></div>
 	</body>
 </html>
 <!--
