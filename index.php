@@ -51,7 +51,7 @@ function loadAJAX(cat)
 {
    $.ajax({
        type: "GET",
-       dataType: "Json",
+       dataType: "json",
        url: "api.php?cat=" + cat,
        success: bondJSON,
        error: function(xhr, status, error){
@@ -90,11 +90,11 @@ function bondJSON(data){
 	//$("#output").text(JSON.stringify(data));
 
 	//this creates a map of the JSON on our page
-	
+	/*
 	let myData = JSON.stringify(data,null,4);
 	myData = "<pre>" + myData + "</pre>"
 	$("#output").html(myData);
-	
+	*/
 }
 
 function bondTemplate(game){

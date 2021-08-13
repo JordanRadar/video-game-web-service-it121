@@ -41,8 +41,5 @@
                 "Rating":"E",
                 "Image":"super-mario-kart.jpg"
               }
-
-
-
 	]
 }
